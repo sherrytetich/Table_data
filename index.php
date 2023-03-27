@@ -15,6 +15,21 @@
                     <div class="card-header">
                         <h2 class="display-6 text-center">Fetch Data From Php Database</h2>
                     </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <tr class="bg-dark text-white">
+                                <td>User Id</td>
+                                <td>Location</td>
+                                <td>No.of dependants</td>
+                            </tr>
+                            <tr>
+                                <td>User Id</td>
+                                <td>Location</td>
+                                <td>No.of dependants</td>
+                            </tr>
+                         </table>
+
+                    </div>
                 </div>
             </div>
         </div>

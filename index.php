@@ -30,6 +30,8 @@ $result = mysqli_query($con,$query)
                                 <td>No.of dependants</td>
                                 <td>Phone</td>
                                 <td>Location</td>
+                                <td>Edit</td>
+                                <td>Delete</td>
                             </tr>
                             <tr>
                                 <?php
@@ -40,6 +42,8 @@ $result = mysqli_query($con,$query)
                                     <td><?php echo $row['number of dependants']?></td>
                                     <td><?php echo $row['phone']?></td>
                                     <td><?php echo $row['location']?></td>
+                                     <td><a href="#" class="btn btn-primary">Edit</a></td>
+                                    <td><a href="#" class="btn btn-danger">Delete</a></td>
                             </tr>
                                 <?php
                                 }

@@ -1,3 +1,11 @@
+<?php
+
+require_once('../config/db.php');
+$query = "select * from users";
+$result = mysqli_query($con,$query)
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,14 +27,23 @@
                         <table class="table table-bordered">
                             <tr class="bg-dark text-white">
                                 <td>User Id</td>
-                                <td>Location</td>
                                 <td>No.of dependants</td>
+                                <td>Phone</td>
+                                <td>Location</td>
                             </tr>
                             <tr>
-                                <td>User Id</td>
-                                <td>Location</td>
-                                <td>No.of dependants</td>
+                                <?php
+                                while($row = mysqli_fetch_assoc($result))
+                                {
+                                ?>
+                                    <td><?php echo $row['id']?></td>
+                                    <td><?php echo $row['number of dependants']?></td>
+                                    <td><?php echo $row['phone']?></td>
+                                    <td><?php echo $row['location']?></td>
                             </tr>
+                                <?php
+                                }
+                                ?>
                          </table>
 
                     </div>

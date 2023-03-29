@@ -1,6 +1,6 @@
 <?php
 // database connection
-$con = mysqli_connect("localhost","root","","test1");
+$con = mysqli_connect("localhost","root","","ussdsecontrial");
 
 // check connection
 if (mysqli_connect_error()) {

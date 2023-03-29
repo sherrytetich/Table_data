@@ -1,3 +1,4 @@
+
 <?php
 // database connection
 $con = mysqli_connect("localhost","root","","test1");
@@ -79,3 +80,4 @@ mysqli_close($con);
   </script>
 </body>
 </html>
+

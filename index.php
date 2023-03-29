@@ -1,6 +1,6 @@
 <?php
 
-require_once('../config/db.php');
+require_once'./config/db.php';
 $query = "select * from users";
 $result = mysqli_query($con,$query)
 
@@ -39,7 +39,7 @@ $result = mysqli_query($con,$query)
                                 {
                                 ?>
                                     <td><?php echo $row['id']?></td>
-                                    <td><?php echo $row['number of dependants']?></td>
+                                    <td><?php echo $row['dependants']?></td>
                                     <td><?php echo $row['phone']?></td>
                                     <td><?php echo $row['location']?></td>
                                      <td><a href="#" class="btn btn-primary">Edit</a></td>

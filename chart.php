@@ -1,6 +1,7 @@
+
 <?php
 // database connection
-$con = mysqli_connect("localhost","root","","ussdsecontrial");
+$con = mysqli_connect("localhost","root","","test1");
 
 // check connection
 if (mysqli_connect_error()) {
@@ -79,3 +80,4 @@ mysqli_close($con);
   </script>
 </body>
 </html>
+
